@@ -20,4 +20,13 @@ function updateTotalPrice() {
     totalPriceElement.textContent = totalPrice.toFixed(2);
 }
 
-// 
+// Task 4: Handle Order Submission
+
+placeOrderButton.addEventListener('click' , fuction()) {
+    const selectProduct = productSelector.options[productSelector.selectedIndex].text;
+    const quantity = quantityInput.value;
+    const totalPrice = totalPriceElement.textContent;
+
+    OrderSummary.textContent = `You ordered ${quantity} of ${selectedProduct}. Total Price: $${totalPrice}
+    `;
+])};
